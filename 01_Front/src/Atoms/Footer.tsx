@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import '../App.css';
-import Header from '../Atoms/Header';
 
 function MainPage() {
   
@@ -11,11 +10,10 @@ function MainPage() {
 
 
   return (
-    
     <div className="Main">
-      <Header />
-      test
-      
+      <header className="Main-header">
+        test
+      </header>
     </div>
   );
 }
