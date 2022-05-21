@@ -1,21 +1,41 @@
 import React from 'react';
 import logo from './logo.svg';
 import '../App.css';
+import styled from "styled-components"
 
-function MainPage() {
+/********************************
+ * フッター作成ファイル
+ ********************************/
+function Fotter() {
   
-  const handleClick = ()=>{
-    console.log("test")
-  }
-
-
+  /********************************
+  * フッター本体
+  ********************************/
   return (
-    <div className="Main">
-      <header className="Main-header">
-        test
-      </header>
-    </div>
+    <SFotter>
+      <SCopy>&copy; 2022 MACTY</SCopy>
+    </SFotter>
+    
   );
 }
 
-export default MainPage;
+export default Fotter;
+
+
+/********************************
+ * CSS
+ ********************************/
+/*全体*/
+ const SFotter = styled.footer`
+    width: 100%;
+    display: flex;
+    text-align: center;
+    height:70px;
+    background-color: #86cecb;
+    position: absolute;
+    bottom: 0;
+    `;
+
+const SCopy = styled.p`
+    margin:auto
+`

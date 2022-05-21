@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import '../App.css';
 import Header from '../Atoms/Header';
+import Footer from '../Atoms/Footer';
 
 function MainPage() {
   
@@ -15,7 +16,9 @@ function MainPage() {
     <div className="Main">
       <Header />
       test
-      
+
+      <Footer />
+
     </div>
   );
 }
