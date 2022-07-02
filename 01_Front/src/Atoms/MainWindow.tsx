@@ -44,6 +44,7 @@ function MainWindow() {
       })
       .then((response) =>{
         console.log("識別結果取得");
+        console.log(response)
       })
       .catch((error)=>{
         console.log("接続失敗");
